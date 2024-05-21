@@ -1,0 +1,66 @@
+#section{
+    background-image: url("https://preview.colorlib.com/theme/pulse/img/review-bg.jpg");
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .test-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+        
+
+        .test-left{ width: 277px;
+            height: 1px;
+            background-color: #FFC515
+        }
+        .test-right{ width: 277px;
+            height: 1px;
+            background-color: #FFC515
+        }
+        .test{
+            font-size: 48px;
+            color: white;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px 20px;
+            font-weight: bold;
+        }
+   
+    }
+    .dirnaq{
+        font-size: 36px;
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .test-words{
+        height: 80px;
+        width: 1102px;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .df{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+
+        .Ted{
+            color: #ffc515;
+            font-size: 18px;
+font-weight: bold;
+
+        }
+        .client{
+            color: white;
+            font-size: 18px;
+font-weight: bold;
+        }
+    }
+}
