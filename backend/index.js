@@ -1,18 +1,22 @@
-const express = require("express")
-const routes= require("./routes/routes.js")
-require("dotenv").config()
-require("./config/db")
+const express = require("express");
+const routes = require("./routes/routes.js");
+require("dotenv").config();
+require("./config/db");
 
-const bodyParser=require("body-parser")
+const cors = require("cors");
 
-const PORT = process.env.PORT
+const bodyParser = require("body-parser");
 
-const app = express()
+const PORT = process.env.PORT;
 
-app.use(bodyParser.json())
+const app = express();
 
-app.use("/", routes)
+app.use(cors({ origin: "http://localhost:5173" }));
 
-app.listen(PORT,()=> {
-    console.log("Server has started" + PORT);
-})
+app.use(bodyParser.json());
+
+app.use("/", routes);
+
+app.listen(PORT, () => {
+  console.log("Server has started" + PORT);
+});

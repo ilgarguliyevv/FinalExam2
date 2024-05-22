@@ -1,0 +1,38 @@
+#basket {
+  .container {
+    margin: auto;
+    max-width: 1100px;
+    padding: 0 20px;
+
+    .cardBasket {
+      padding: 10px;
+      border: 1px solid #adb5bd;
+      display: flex;
+      gap: 20px;
+      border-radius: 20px;
+      margin: 10px 0;
+
+      .imageHolder {
+        width: 200px;
+        height: 200px;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .allText {
+        display: flex;
+        flex-direction: column;
+        .buttons {
+          display: flex;
+          justify-content: space-between;
+          .counts {
+            display: flex;
+            gap: 5px;
+          }
+        }
+      }
+    }
+  }
+}
